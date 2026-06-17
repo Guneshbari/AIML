@@ -1,0 +1,115 @@
+# Environment Variables
+
+.env
+.env.*
+*.env
+
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual Environments
+
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter Notebooks
+
+.ipynb_checkpoints/
+
+# Build / Distribution
+
+build/
+dist/
+*.egg-info/
+
+# IDEs
+
+.vscode/
+.idea/
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+
+# Logs
+
+*.log
+logs/
+
+# LangChain / AI
+
+.langchain.db
+
+# Vector Databases
+
+chroma/
+chromadb/
+*.faiss
+faiss_index/
+vectorstore/
+vector_store/
+
+# ML Models
+
+models/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.bin
+
+# Hugging Face
+
+.cache/huggingface/
+huggingface_cache/
+
+# Transformers / Datasets
+
+.cache/
+datasets/
+
+# Weights & Biases
+
+wandb/
+
+# TensorBoard
+
+runs/
+tensorboard_logs/
+
+# Temporary Files
+
+tmp/
+temp/
+*.tmp
+
+# Node.js (for AI web apps)
+
+node_modules/
+.next/
+out/
+
+# SQLite Databases
+
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets
+
+secrets.json
+credentials.json
+service-account.json
+google_credentials.json
+
