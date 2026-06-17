@@ -4,14 +4,14 @@ A simple Python application that uses the new Google GenAI SDK to translate lang
 
 ## Project Files
 
-*   [app.py](file:///home/trespasser/coding_stuff/AIML/Language_Translator_Assistant/app.py): Python script containing translation client logic.
-*   [requirements.txt](file:///home/trespasser/coding_stuff/AIML/Language_Translator_Assistant/requirements.txt): Python dependencies for this assistant.
+*   [app.py](./app.py): Python script containing translation client logic.
+*   [requirements.txt](./requirements.txt): Python dependencies for this assistant.
 
 ## Setup Instructions
 
 1.  **Navigate to this assistant directory:**
     ```bash
-    cd /home/trespasser/coding_stuff/AIML/Language_Translator_Assistant
+    cd Language_Translator_Assistant
     ```
 
 2.  **Install dependencies:**
@@ -36,7 +36,7 @@ It will run the translation function `language_translator` with the input *"Tran
 
 ## Code Explanation
 
-The logic in [app.py](file:///home/trespasser/coding_stuff/AIML/Language_Translator_Assistant/app.py):
+The logic in [app.py](./app.py):
 1.  **Environment Variables**: Uses `python-dotenv` to load the API key from the local `.env` file.
 2.  **GenAI Client**: Initializes `genai.Client` from the `google-genai` library.
 3.  **Generation**: Uses `client.models.generate_content` with the `gemini-2.5-flash` model to translate inputs.
