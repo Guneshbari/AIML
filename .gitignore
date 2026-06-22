@@ -113,3 +113,8 @@ credentials.json
 service-account.json
 google_credentials.json
 
+# Local requirements files (not pushed to GitHub)
+/requirements.txt
+/requirments.txt
+
+
