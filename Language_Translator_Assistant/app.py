@@ -2,7 +2,9 @@ from dotenv import load_dotenv
 from google import genai
 import os
 
-load_dotenv()
+# Load .env file relative to script location
+dotenv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
+load_dotenv(dotenv_path)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)

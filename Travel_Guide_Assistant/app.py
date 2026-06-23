@@ -3,7 +3,9 @@ import os
 from langchain.chat_models import init_chat_model
 from langchain.messages import HumanMessage, SystemMessage
 
-load_dotenv()
+# Load .env file relative to script location
+dotenv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
+load_dotenv(dotenv_path)
 
 api_key = os.getenv("GEMINI_API_KEY")
 model = init_chat_model(

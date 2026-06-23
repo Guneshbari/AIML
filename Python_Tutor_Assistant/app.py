@@ -4,7 +4,9 @@ from langchain.messages import HumanMessage, SystemMessage
 
 import os
 
-load_dotenv()
+# Load .env file relative to script location
+dotenv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
+load_dotenv(dotenv_path)
 api_key = os.getenv("GROQ_API_KEY")
 
 system_msg = SystemMessage(
