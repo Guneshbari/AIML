@@ -1,11 +1,11 @@
 # Python Code Splitter
 
-A Python application demonstrating code-splitting capabilities using LangChain text splitters. It dynamically parses and splits Python source code into separate logical chunks (functions/classes) based on Python syntax rules.
+A Python application demonstrating code-splitting capabilities using LangChain text splitters. It loads a local Python source file and recursively splits it into semantic chunks based on Python syntax.
 
 ## Project Files
 
-*   [app.py](./app.py): Python script that configures `RecursiveCharacterTextSplitter` from language rules, splits dummy code, and prints chunks.
-*   [requirements.txt](./requirements.txt): Python dependencies for this assistant, including `langchain-text-splitters`.
+*   [app.py](./app.py): Python script that loads a file using `TextLoader`, configures `RecursiveCharacterTextSplitter` for Python language syntax with chunk size 500 and overlap 50, splits it, and prints the first two chunks.
+*   [requirements.txt](./requirements.txt): Python dependencies for this assistant, including `langchain-community` and `langchain-text-splitters`.
 
 ## Setup Instructions
 
@@ -19,6 +19,9 @@ A Python application demonstrating code-splitting capabilities using LangChain t
     pip install -r requirements.txt
     ```
 
+3.  **Place a Python File:**
+    Ensure a Python file named `tool_calling.py` is present in this directory (or edit the path inside `app.py`).
+
 ## Usage
 
 Run the Python code splitter:
@@ -26,11 +29,12 @@ Run the Python code splitter:
 python app.py
 ```
 
-The script will split the provided Python code block into semantic chunks and print each chunk output separated by boundaries to the console.
+The script will load the source file, split it into chunks, and output the total chunk count along with the contents of the first two chunks to the console.
 
 ## Code Explanation
 
 The logic in [app.py](./app.py):
-1.  **Language Splitter**: Imports `Language` enum and `RecursiveCharacterTextSplitter` from `langchain_text_splitters`.
-2.  **Language Rules Configuration**: Uses `RecursiveCharacterTextSplitter.from_language(language=Language.PYTHON, chunk_size=100, chunk_overlap=0)` to create a splitter configured with python-specific separator tokens (like `def` or `class`).
-3.  **Splitting**: Calls `create_documents` to segment the source code string.
+1.  **Document Loader**: Imports `TextLoader` from `langchain_community.document_loaders` to read the local code file.
+2.  **Language Splitter**: Imports `Language` enum and `RecursiveCharacterTextSplitter` from `langchain_text_splitters`.
+3.  **Language Rules Configuration**: Initializes `RecursiveCharacterTextSplitter` with `Language.PYTHON`, chunk size 500, and chunk overlap 50.
+4.  **Splitting**: Calls `split_documents(documents)` to segment the loaded code document.
