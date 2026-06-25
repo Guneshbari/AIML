@@ -1,0 +1,5 @@
+langchain
+langchain-tavily
+google-search-results
+python-dotenv
+requests
