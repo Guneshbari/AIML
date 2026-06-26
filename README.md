@@ -1,6 +1,6 @@
 # AIML - AI/ML Assistants and Agents Portfolio
 
-Welcome to the **AIML** repository! This is a comprehensive collection of 24 AI-powered helper scripts, web interfaces, and intelligent agents built using LangChain, Google GenAI, Groq, Gradio, and RAG architectures.
+Welcome to the **AIML** repository! This is a comprehensive collection of 25 AI-powered helper scripts, web interfaces, and intelligent agents built using LangChain, Google GenAI, Groq, Gradio, and RAG architectures.
 
 ## Portfolio Directory
 
@@ -42,7 +42,8 @@ The repository is organized into distinct subdirectories, each representing a co
 *   [Docuchat_with_Web_Docs](./Docuchat_with_Web_Docs): Web page scraper Q&A using `WebBaseLoader` and Chroma DB.
 
 ### 8. Multi-Tool Intelligent Agents (LangChain Agent Framework)
-*   [SkillMap_Agent](./SkillMap_Agent): Carrier advisor agent utilizing Tavily Search and JSearch APIs.
+*   [SkillMap_Agent](./SkillMap_Agent): Career advisor agent utilizing Tavily Search and JSearch APIs.
+*   [SkillMap_Agent_with_Memory](./SkillMap_Agent_with_Memory): Career advisor agent with memory checkpointing using Tavily Search and JSearch APIs.
 *   [TravelBuddy_Agent](./TravelBuddy_Agent): Travel planner agent utilizing Tavily Search and SerpAPI Google Flights search.
 *   [CourseFinder_Agent](./CourseFinder_Agent): Course recommendation agent utilizing Tavily Search and YouTube Data API v3.
 
@@ -50,7 +51,7 @@ The repository is organized into distinct subdirectories, each representing a co
 
 ## Global Setup Instructions
 
-This repository provides a root-level `requirements.txt` containing all dependencies across all 24 projects for convenience.
+This repository provides a root-level `requirements.txt` containing all dependencies across all 25 projects for convenience.
 
 1.  **Clone the repository and enter the directory:**
     ```bash
@@ -84,8 +85,8 @@ This repository provides a root-level `requirements.txt` containing all dependen
 To run any project, navigate to its directory and execute its `app.py` script:
 
 ```bash
-# Example: Running the SkillMap Agent
-cd SkillMap_Agent
+# Example: Running the SkillMap Agent with Memory
+cd SkillMap_Agent_with_Memory
 python app.py
 ```
 Each subdirectory contains its own dedicated `README.md` file with detailed instructions specific to that project.
