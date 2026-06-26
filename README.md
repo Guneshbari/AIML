@@ -1,6 +1,6 @@
 # AIML - AI/ML Assistants and Agents Portfolio
 
-Welcome to the **AIML** repository! This is a comprehensive collection of 25 AI-powered helper scripts, web interfaces, and intelligent agents built using LangChain, Google GenAI, Groq, Gradio, and RAG architectures.
+Welcome to the **AIML** repository! This is a comprehensive collection of 26 AI-powered helper scripts, web interfaces, and intelligent agents built using LangChain, Google GenAI, Groq, Gradio, and RAG architectures.
 
 ## Portfolio Directory
 
@@ -45,13 +45,14 @@ The repository is organized into distinct subdirectories, each representing a co
 *   [SkillMap_Agent](./SkillMap_Agent): Career advisor agent utilizing Tavily Search and JSearch APIs.
 *   [SkillMap_Agent_with_Memory](./SkillMap_Agent_with_Memory): Career advisor agent with memory checkpointing using Tavily Search and JSearch APIs.
 *   [TravelBuddy_Agent](./TravelBuddy_Agent): Travel planner agent utilizing Tavily Search and SerpAPI Google Flights search.
+*   [TravelBuddy_Agent_with_Memory](./TravelBuddy_Agent_with_Memory): Travel planner agent with memory checkpointing using Tavily Search and SerpAPI Google Flights search.
 *   [CourseFinder_Agent](./CourseFinder_Agent): Course recommendation agent utilizing Tavily Search and YouTube Data API v3.
 
 ---
 
 ## Global Setup Instructions
 
-This repository provides a root-level `requirements.txt` containing all dependencies across all 25 projects for convenience.
+This repository provides a root-level `requirements.txt` containing all dependencies across all 26 projects for convenience.
 
 1.  **Clone the repository and enter the directory:**
     ```bash
